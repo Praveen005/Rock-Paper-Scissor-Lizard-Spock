@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-Scrissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h3>Rock Paper Scissor Lizard Spock</h3>
+        </header>
+        <!-- Results  -->
+        <div class="resultBar">
+            <div class="score-cabin">
+                <textarea style="resize: none;" disabled name="" id="   " cols="4" rows="3"></textarea>
+                <span class="mid-colon">:</span>
+                <textarea style="resize: none;" disabled name="" id="botScore" cols="4" rows="3"></textarea>   
+            </div>
+            <div class="result-Bar">
+                <textarea style="resize: none;"  disabled name="result-text" id="gameResult" cols="20" rows="2"></textarea>
+            </div>
+        </div>
+        <!-- Players  -->
+        <div class="playersBar">
+            <div class= "player">
+                <h3 style="margin-bottom: 5px;">Player 1</h3>
+                <div class="player-box player1"></div>
+            </div>
+            <div class="player">
+                <h3 style="margin-bottom: 5px;">Bot</h3>
+                <div class="player-box player2"></div>
+            </div>
+        </div>
+        <!-- Options Available  -->
+        <div class="optionsBar">
+            <div data-index="0" class="options rock"><i class="fa-solid fa-hand-back-fist"></i></div>
+            <div data-index="1" class="options paper"><i class="fa-solid fa-file"></i></div>
+            <div data-index="2" class="options scissor"><i class="fa-solid fa-scissors"></i></div>
+            <div data-index="3" class="options lizard"><i class="fa-solid fa-hand-lizard"></i></div>
+            <div data-index="4" class="options spock"><i class="fa-solid fa-hand-spock"></i></div>
+        </div>
+        <!-- Reset  -->
+        <div class="resetBar">
+            <Button id="resetBtn">Reset</Button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
