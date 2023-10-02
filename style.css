@@ -198,3 +198,53 @@ body{
     line-height: 10px;
 }
 }
+
+.theme-area {
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
+    right: 15px;
+    align-items: center;
+}
+
+.theme-icon {
+    cursor: pointer;
+}
+
+body.dark {
+    background-color: hsl(235, 21%, 11%);
+   
+}
+
+body.dark .container {
+    border: 2px solid white;
+    color: white;
+}
+
+body.dark .playersBar .player-box.player1 {
+    border: 1px solid #154674;
+}
+
+body.dark .playersBar .player-box.player2 {
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .rock{
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .paper{
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .scissor{
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .lizard{
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .spock{
+    border: 1px solid #154674;
+}

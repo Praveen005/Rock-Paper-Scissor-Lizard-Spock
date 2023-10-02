@@ -162,3 +162,15 @@ function resetSelection(){
 
 reset.addEventListener('click', resetSelection);
 
+function changeTheme() {
+    const themeIcon = document.querySelector(".theme-icon")
+    document.body.classList.toggle("dark")
+        if (document.body.classList.contains("dark")) {
+            themeIcon.src = "icon-sun.svg"
+        }
+        else {
+            themeIcon.src = "icon-moon.svg"
+            
+        }
+}
+
