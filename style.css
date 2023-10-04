@@ -10,9 +10,11 @@ body{
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.container {
     position: relative;
 }
+
 
 .resultBar{
     display: flex;
@@ -37,8 +39,8 @@ body{
 .container{
     width: 800px;
     border: 2px solid salmon;
-    padding:0 20px 20px;
-    overflow: hidden;
+    padding: 0 20px 20px ;
+    
 }
 
 .container > header{
@@ -48,8 +50,18 @@ body{
     color: #fff;
     text-align: center;
     margin-bottom: 15px;
-    padding: 20px 0;
+    padding: 20px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 25px;
+    
+    
 }
+
+
+
 
 .container > .resultBar > .score-cabin > #playerScore,
 .container > .resultBar > .score-cabin > #botScore{
@@ -197,4 +209,54 @@ body{
     text-align: center;
     line-height: 10px;
 }
+}
+
+
+
+
+.theme-icon {
+    cursor: pointer;
+}
+
+body.dark {
+    background-color: hsl(235, 21%, 11%);
+   
+}
+
+body.dark .container {
+    border: 2px solid rgb(157, 157, 157);
+    color: white;
+}
+
+body.dark .playersBar .player-box.player1 {
+    border: 1px solid #154674;
+}
+
+body.dark .playersBar .player-box.player2 {
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .rock{
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .paper{
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .scissor{
+    border: 1px solid #154674;
+}
+
+body.dark .optionsBar .lizard{
+    border: 1px solid #154674;
+}
+
+body.dark .container .optionsBar .options:hover{
+    background: #eaebec;
+    color: gray;
+}
+
+body.dark .optionsBar .spock{
+    border: 1px solid #154674;
 }
